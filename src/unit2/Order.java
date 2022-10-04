@@ -125,7 +125,9 @@ public class Order {
                 subTotal += drinkMenu.get(2).getPrice();
             }
         }
-        System.out.printf("Your subtotal is $%d", subTotal);
+        System.out.printf("Your subtotal is $%.2f\n", subTotal);
+        new CreateFile();
+        new WriteToFile(order);
     }
 
 }
